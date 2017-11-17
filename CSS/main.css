@@ -8,6 +8,9 @@ html {
     height: auto;
     top: 0;
     left: 0;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .slogan {
@@ -15,7 +18,7 @@ html {
     color: white;
     text-align: center;
     margin-top: 20px;
-    font-size: 120px;
+    font-size: 70px;
 }
 
 p {
