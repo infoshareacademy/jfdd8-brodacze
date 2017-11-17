@@ -1,34 +1,28 @@
 html {
     background-image: url("../src/background.jpg");
-    background-size: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
 }
+
 .slogan {
     font-family: 'Anton', sans-serif;
     color: white;
     text-align: center;
-    margin-top: 50%;
-    font-size: 90px;
-}
-#page-header{
-    background-color:grey;
-    text-transform: uppercase;
-}
-.nav-pills > li > a {
-    color: #000 !important;
-    direction: inline-block;
-}
-.nav-pills > li > a.active {
-    background-color: #000;
-}
-.nav-pills > li.active >a{
-    color: #fff !important;
-    background-color: #000;
-    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 120px;
 }
 
-@media (max-width: 480px){
-    .nav>li>a{
-        padding: 5px 5px;
-        font-size: 10px;
-    }
+p {
+    font-size: 50px;
+    z-index: 1;
+}
+
+.grid {
+    margin: 20px;
 }
