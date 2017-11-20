@@ -24,8 +24,19 @@ body {
     text-align: center;
     color: white;
     vertical-align: middle;
+    width: 100%;
+    padding-bottom: 0;
+    min-height: 172px;
+    min-width: 260px;
 }
 
 .slogan h1 {
     font-size: 15em;
+    margin: 0 auto;
+}
+
+.slogan img {
+    vertical-align: bottom;
+    margin: 0 auto;
+    margin-top: 5em;
 }
