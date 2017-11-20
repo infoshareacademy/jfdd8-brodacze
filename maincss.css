@@ -1,3 +1,7 @@
+html {
+    background-color: lightgreen;
+}
+
 .flexContainer {
     padding: 0;
     list-style: none;
@@ -11,15 +15,19 @@
 }
 
 .flexItem {
-    background: white;
+    border-radius: 25px;
+    background-image: url("src/background.jpg");
+    background-size: cover;
     border: 2px solid black;
     padding: 5px;
     width: 30%;
     height: 250px;
     line-height: 100px;
-    color: green;
-    font-weight: normal;
+    color: black;
+    font-style: italic;
+    font-weight: bold;
     font-size: 1em;
     text-align: center;
     margin-bottom: 10px;
+    flex-grow: 2;
 }
