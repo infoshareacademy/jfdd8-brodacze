@@ -1,24 +1,23 @@
 html {
+    height: auto;
+    margin-top: 50px;
+    color: white;
+}
+body {
+    position: relative;
+    margin-right: 10%;
+    margin-left: 10%;
     background-image: url("../src/background.jpg");
     background-size: cover;
     background-attachment: fixed;
-    min-height: 100%;
-    min-width: 1024px;
-    width: 100%;
-    height: auto;
-    top: 0;
-    left: 0;
-    margin-top: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
 }
-
 .slogan {
     font-family: 'Anton', sans-serif;
     color: white;
     text-align: center;
     margin-top: 20px;
     font-size: 70px;
+    padding: 25vh;
 }
 
 p {
@@ -28,12 +27,16 @@ p {
 
 .grid {
     margin: 20px;
-}
-.container {
-    background-color: rgba(255, 225, 70, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     text-align: center;
     border: hidden;
-    border-radius: 10px;
+    border-radius: 100px;
     padding: 1ex;
-    width: 80%;
+}
+.container {
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    border: hidden;
+    border-radius: 100px;
+    padding: 1ex;
 }
