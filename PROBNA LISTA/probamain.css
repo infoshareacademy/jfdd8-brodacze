@@ -5,17 +5,15 @@ body {
 }
 
 .container-list {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
     display: flex;
     box-sizing: border-box;
 }
 
 .container-list .box {
     width: 20vw;
+    height: 50vh;
     text-align: center;
-    line-height: 100vh;
-    flex-grow: 1;
     background-size: cover;
     background-position: center;
     transition: 1s;
@@ -25,7 +23,6 @@ body {
 h1 {
     margin: 0;
     padding: 0;
-    line-height: 100vh;
     font-size: 2em;
     background: rgba(0,0,0,.8);
     transition: .5s;
