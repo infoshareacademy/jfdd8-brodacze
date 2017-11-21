@@ -1,8 +1,8 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-}
+/*body {*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*font-family: sans-serif;*/
+/*}*/
 
 .container-list {
     width: 100vw;
@@ -31,7 +31,7 @@ h1 {
     transition: .5s;
 }
 
-h1 span {
+h1 span -lista {
     background: rgba(255,255,255,0);
     width: 100%;
     transition: 1s;
