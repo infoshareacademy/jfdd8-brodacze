@@ -4,14 +4,14 @@ body {
     font-family: sans-serif;
 }
 
-.container {
+.container-list {
     width: 100vw;
     height: 100vh;
     display: flex;
     box-sizing: border-box;
 }
 
-.container .box {
+.container-list .box {
     width: 20vw;
     text-align: center;
     line-height: 100vh;
@@ -58,26 +58,26 @@ h1 span {
     width: 30vw;
 }
 
-.container .box:nth-child(1) {
+.container-list .box:nth-child(1) {
     background: url("img/1.jpg");
 }
 
-.container .box:nth-child(2) {
+.container-list .box:nth-child(2) {
     background: url("img/2.jpg");
 }
 
-.container .box:nth-child(3) {
+.container-list .box:nth-child(3) {
     background: url("img/3.jpg");
 }
 
-.container .box:nth-child(4) {
+.container-list .box:nth-child(4) {
     background: url("img/4.jpg");
 }
 
-.container .box:nth-child(5) {
+.container-list .box:nth-child(5) {
     background: url("img/5.png");
 }
 
-.container .box:nth-child(6) {
+.container-list .box:nth-child(6) {
     background: url("img/6.png");
 }
