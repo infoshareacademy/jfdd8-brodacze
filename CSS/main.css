@@ -13,7 +13,6 @@ body {
     text-align: center;
     justify-content: center;
     border: hidden;
-    border-radius: 150px;
     width: 90vw;
     height: 90vh;
 }
@@ -41,8 +40,18 @@ body {
     margin-top: 5em;
 }
 
+.submit {
+    display: table-cell;
+    position: relative;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    min-height: 172px;
+    min-width: 260px;
+}
+
 input[type=text], select {
-    width: 100%;
+    width: 20%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -52,7 +61,7 @@ input[type=text], select {
 }
 
 input[type=submit] {
-    width: 100%;
+    width: 50%;
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
