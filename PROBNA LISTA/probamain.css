@@ -11,7 +11,7 @@
 }
 
 .container-list .box, .container-list2 .box {
-    width: 20vw;
+    width: 33.33333333333%;
     height: 50vh;
     text-align: center;
     background-size: cover;
@@ -52,7 +52,7 @@ h1 span {
 }
 
 .box:hover {
-    width: 30vw;
+    width: 40%;
 }
 
 .container-list .box:nth-child(1) {

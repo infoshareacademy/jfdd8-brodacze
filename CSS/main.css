@@ -11,10 +11,13 @@ body {
     position: relative;
     background-color: rgba(0, 0, 0, 0.6);
     text-align: center;
+    border-radius: 45px;
     justify-content: center;
     border: hidden;
     width: 90vw;
     height: 90vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 .slogan {
