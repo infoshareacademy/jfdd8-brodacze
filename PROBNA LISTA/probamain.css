@@ -1,21 +1,19 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-}
+/*body {*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*font-family: sans-serif;*/
+/*}*/
 
-.container-list {
-    width: 100vw;
-    height: 100vh;
+.container-list, .container-list2 {
+    width: 100%;
     display: flex;
     box-sizing: border-box;
 }
 
-.container-list .box {
+.container-list .box, .container-list2 .box {
     width: 20vw;
+    height: 50vh;
     text-align: center;
-    line-height: 100vh;
-    flex-grow: 1;
     background-size: cover;
     background-position: center;
     transition: 1s;
@@ -25,7 +23,6 @@ body {
 h1 {
     margin: 0;
     padding: 0;
-    line-height: 100vh;
     font-size: 2em;
     background: rgba(0,0,0,.8);
     transition: .5s;
@@ -59,25 +56,32 @@ h1 span {
 }
 
 .container-list .box:nth-child(1) {
-    background: url("img/1.jpg");
+    background: url("img/1.png");
+    background-size: cover;
 }
 
 .container-list .box:nth-child(2) {
     background: url("img/2.jpg");
+    background-size: cover;
 }
 
 .container-list .box:nth-child(3) {
     background: url("img/3.jpg");
+    background-size: cover;
 }
 
-.container-list .box:nth-child(4) {
+.container-list2 .box:nth-child(1) {
     background: url("img/4.jpg");
+    background-size: cover;
+
 }
 
-.container-list .box:nth-child(5) {
-    background: url("img/5.png");
+.container-list2 .box:nth-child(2) {
+    background: url("img/5.jpg");
+    background-size: cover;
 }
 
-.container-list .box:nth-child(6) {
-    background: url("img/6.png");
+.container-list2 .box:nth-child(3) {
+    background: url("img/6.jpg");
+    background-size: cover;
 }
