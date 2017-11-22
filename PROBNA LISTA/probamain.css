@@ -73,6 +73,7 @@ h1 span {
 .container-list2 .box:nth-child(1) {
     background: url("img/4.jpg");
     background-size: cover;
+
 }
 
 .container-list2 .box:nth-child(2) {
