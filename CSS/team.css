@@ -1,0 +1,5 @@
+.tumbs {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 980px;
+}
