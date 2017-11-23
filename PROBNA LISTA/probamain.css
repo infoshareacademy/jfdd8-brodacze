@@ -40,6 +40,30 @@ h1 span {
     display: block;
 }
 
+.tl {
+    border-top-left-radius: 45px;
+}
+
+.tr {
+    border-top-right-radius: 45px;
+}
+
+#bl {
+    border-bottom-left-radius: 45px;
+}
+
+#br {
+    border-bottom-right-radius: 45px;
+}
+
+.tl span {
+    border-top-left-radius: 45px;
+}
+
+.tr span {
+    border-top-right-radius: 45px;
+}
+
 .box:hover h1 span {
     color: #262626;
     background: rgba(255,255,255,0);
