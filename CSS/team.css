@@ -1,5 +1,40 @@
+.container-t {
+    display: table;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    border-radius: 45px;
+    justify-content: center;
+    border: hidden;
+    width: 90vw;
+    height: 90vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.team {
+     display: table-cell;
+     position: relative;
+     text-align: center;
+     color: white;
+     font-size: 10em;
+     vertical-align: middle;
+     width: 100%;
+     padding-bottom: 5px;
+     min-height: 172px;
+     min-width: 260px;
+ }
 .tumbs {
     display: flex;
     justify-content: space-around;
-    margin-top: 980px;
+    border-radius: 45px;
+    padding: 55px 15px 0px 15px;
+    margin: 100px 30px -10px 30px;
+}
+.text {
+    margin: 0;
+    padding: 0;
+    background: none;
+    font-size: 2em;
+    transition: .5s;
 }
