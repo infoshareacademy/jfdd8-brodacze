@@ -5,6 +5,93 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
+.podmenu {
+    height: 5vh;
+}
+.menu {
+    position: fixed;
+    margin: 0 auto;
+    padding: 0;
+    height: 30px;
+    width: 90vw;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 45px;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
+    text-align: center;
+    justify-content: center;
+}
+
+.menu li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline;
+}
+
+.menu li a {
+    float: left;
+    padding-left: 15px;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font: 12px Verdana, Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    /*background: url('topMenuImages.png') 0px -30px no-repeat;*/
+}
+
+.menu li a span {
+    line-height: 30px;
+    float: left;
+    display: block;
+    padding-right: 15px;
+    text-align: center;
+    justify-content: center;
+    /*background: url('topMenuImages.png') 100% -30px no-repeat;*/
+}
+
+.menu li a:hover {
+    letter-spacing: 10px;
+    padding-right: 50px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    background-position: 0px -60px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    justify-content: center;
+}
+
+.menu li a:hover span {
+    background-position: 100% -60px;
+
+}
+
+.menu li a.active, .menu li a.active:hover {
+    outline-width: 100px;
+    font: 12px Verdana, Arial, Helvetica, sans-serif;
+    /*box-shadow: 0px -90px no-repeat;*/
+    color: rgb(255, 255, 255);
+}
+
+.menu li a.active span, .menu li a.active:hover span {
+    /*background: url('topMenuImages.png') 100% -90px no-repeat;*/
+}
+.container-slogan {
+    display: table;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    border-radius: 45px;
+    justify-content: center;
+    border: hidden;
+    width: 90vw;
+    height: 85vh;
+    margin-bottom: 5vh;
+    overflow: hidden;
+}
 
 .container {
     display: table;

@@ -11,7 +11,15 @@
 
 </head>
 <body>
-<div class="container">
+
+<ul class="menu">
+    <li><a href="/home" class="active"><span>Home</span></a></li>
+    <li><a href="/services"><span>Services</span></a></li>
+    <li><a href="/about"><span>About</span></a></li>
+    <li><a href="/contact"><span>Contact</span></a></li>
+</ul>
+<div class="podmenu"></div>
+<div class="container-slogan">
     <div class="slogan">
         <h1>e-Budżet</h1><br>
         <h2>Jak zaoszczędzić trochę grosza?</h2>
@@ -51,7 +59,22 @@
     </form>
     </div>
 </div>
+<script>
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
 
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
 
 </body>
 </html>
