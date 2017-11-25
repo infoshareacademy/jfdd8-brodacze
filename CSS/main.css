@@ -15,8 +15,9 @@ body {
     height: 10vh;
     width: 90vw;
     display: block;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 45px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
     background-size: cover;
     background-attachment: fixed;
     z-index: 1;
@@ -29,6 +30,8 @@ body {
     margin: 0;
     list-style: none;
     display: inline;
+    text-align: center;
+    justify-content: center;
 }
 
 .menu li a {
