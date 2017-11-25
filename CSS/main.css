@@ -8,6 +8,7 @@ body {
 .podmenu {
     height: 5vh;
 }
+
 .menu {
     position: fixed;
     margin: 0 auto;
@@ -48,7 +49,7 @@ body {
 }
 
 .menu li a span {
-    line-height: 30px;
+    line-height: 10vh;
     float: left;
     display: block;
     padding-right: 15px;
@@ -60,15 +61,15 @@ body {
 .menu li a:hover {
     letter-spacing: 10px;
     padding-right: 50px;
-    box-shadow: 0 5px 15px rgba(0,0,0,.5);
-    background-position: 0px -60px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.8);
+    /*background-position: 0px -60px;*/
     color: rgb(255, 255, 255);
     text-align: center;
     justify-content: center;
 }
 
 .menu li a:hover span {
-    background-position: 100% -60px;
+    /*background-position: 100% -60px;*/
 
 }
 
@@ -81,6 +82,10 @@ body {
 
 .menu li a.active span, .menu li a.active:hover span {
     /*background: url('topMenuImages.png') 100% -90px no-repeat;*/
+}
+
+.menu ul {
+    padding-top: 0;
 }
 /*.container-slogan {*/
     /*display: table;*/
