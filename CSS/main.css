@@ -132,8 +132,12 @@ body {
 }
 
 .slogan h1 {
-    font-size: 15em;
+    font-family: 'Pacifico', cursive;
+    font-size: 8em;
     margin: 0 auto;
+}
+.slogan h2 {
+    font-size: 3em;
 }
 
 .slogan img {
