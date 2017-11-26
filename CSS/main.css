@@ -1,6 +1,6 @@
 body {
     position: relative;
-    margin: 5vh 5vw 5vh 5vw;
+    margin: 0vh 5vw 5vh 5vw;
     background-image: url("../src/background.jpg");
     background-size: cover;
     background-attachment: fixed;
@@ -8,15 +8,17 @@ body {
 .podmenu {
     height: 5vh;
 }
+
 .menu {
     position: fixed;
     margin: 0 auto;
     padding: 0;
-    height: 30px;
+    height: 10vh;
     width: 90vw;
     display: block;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 45px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
     background-size: cover;
     background-attachment: fixed;
     z-index: 1;
@@ -29,6 +31,8 @@ body {
     margin: 0;
     list-style: none;
     display: inline;
+    text-align: center;
+    justify-content: center;
 }
 
 .menu li a {
@@ -45,7 +49,7 @@ body {
 }
 
 .menu li a span {
-    line-height: 30px;
+    line-height: 10vh;
     float: left;
     display: block;
     padding-right: 15px;
@@ -57,15 +61,15 @@ body {
 .menu li a:hover {
     letter-spacing: 10px;
     padding-right: 50px;
-    box-shadow: 0 5px 15px rgba(0,0,0,.5);
-    background-position: 0px -60px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.8);
+    /*background-position: 0px -60px;*/
     color: rgb(255, 255, 255);
     text-align: center;
     justify-content: center;
 }
 
 .menu li a:hover span {
-    background-position: 100% -60px;
+    /*background-position: 100% -60px;*/
 
 }
 
@@ -79,19 +83,23 @@ body {
 .menu li a.active span, .menu li a.active:hover span {
     /*background: url('topMenuImages.png') 100% -90px no-repeat;*/
 }
-.container-slogan {
-    display: table;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.6);
-    text-align: center;
-    border-radius: 45px;
-    justify-content: center;
-    border: hidden;
-    width: 90vw;
-    height: 85vh;
-    margin-bottom: 5vh;
-    overflow: hidden;
+
+.menu ul {
+    padding-top: 0;
 }
+/*.container-slogan {*/
+    /*display: table;*/
+    /*position: relative;*/
+    /*background-color: rgba(0, 0, 0, 0.6);*/
+    /*text-align: center;*/
+    /*border-radius: 45px;*/
+    /*justify-content: center;*/
+    /*border: hidden;*/
+    /*width: 90vw;*/
+    /*height: 85vh;*/
+    /*margin-bottom: 5vh;*/
+    /*overflow: hidden;*/
+/*}*/
 
 .container {
     display: table;
@@ -102,12 +110,14 @@ body {
     justify-content: center;
     border: hidden;
     width: 90vw;
-    height: 90vh;
-    margin-top: 5vh;
+    height: 80vh;
+    margin-top: 10vh;
     margin-bottom: 5vh;
     overflow: hidden;
 }
-
+.break {
+    height: 5vh;
+}
 .slogan {
     display: table-cell;
     position: relative;
