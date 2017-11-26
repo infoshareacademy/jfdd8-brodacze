@@ -9,43 +9,46 @@
     <link rel="stylesheet" href="PROBNA LISTA/probamain.css">
     <link rel="stylesheet" href="CSS/team.css">
     <link href="https://fonts.googleapis.com/css?family=Anton&amp;subset=latin-ext,vietnamese" rel="stylesheet">
-    <link rel="stylesheet" href="/bootstrap-3.3.7-dist/bootstrap.min.css">
-</head>
+    <link rel="stylesheet" href="CSS/animate.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+          integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+          crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    </head>
 <body>
+<div  class="menu">
+<ul class="menu1">
+    <li><a href="/home" class="active"><span>Home</span></a></li>
+    <li><a href="/services"><span>Services</span></a></li>
+    <li><a href="/about"><span>About</span></a></li>
+    <li><a href="/contact"><span>Contact</span></a></li>
+</ul>
+</div>
+<div class="podmenu"></div>
 <div class="container">
     <div class="slogan">
-        <h1>e-Budżet</h1><br>
+        <h1 class="animated rubberBand">e-Budżet</h1><br>
         <h2>Jak zaoszczędzić trochę grosza?</h2>
-        <a href=""></a> <img src="src/arrow.png"></a>
+        <a href="#break"><img src="src/arrow.png"></a>
     </div>
 </div>
-<div class="container">
-<div class="container-list">
-    <div class="box"><h1><span>Logowanie</span></h1></div>
-    <div class="box"><h1><span>Wpływy</span></h1></div>
-    <div class="box"><h1><span>Wydatki</span></h1></div>
-</div>
-<div class="container-list2">
-    <div class="box"><h1><span>Koszty</span></h1></div>
-    <div class="box"><h1><span>Kalendarz</span></h1></div>
-    <div class="box"><h1><span>Analiza</span></h1></div>
-</div>
-</div>
-
-<div class="container-t">
-        <div class="team">
-            <h1 class="text">ZESPÓŁ</h1>
-                <div class="col-xs-3">
-                    <div class="tumbs">
-                        <div class="tumb"><a href="#" class="image img-thumbnail img-responsive img-circle"><img style="border-radius: 45px" src="src/pic1.png"></a></div>
-                        <div class="tumb"><a href="#" class="image img-thumbnail img-responsive img-circle"><img style="border-radius: 45px" src="src/pic2.png"></a></div>
-                        <div class="tumb"><a href="#" class="image img-thumbnail img-responsive img-circle"><img style="border-radius: 45px" src="src/pic3.png"></a></div>
-                        <div class="tumb"><a href="#" class="image img-thumbnail img-responsive img-circle"><img style="border-radius: 45px" src="src/pic4.png"></a></div>
-                    </div>
-                </div>
-        </div>
+<div class="break" id="break"></div>
+<div class="container" id="lista">
+    <div class="container-list">
+        <div class="box"><h1 class="tl"><span>Logowanie</span></h1></div>
+        <div class="box"><h1><span>Wpływy</span></h1></div>
+        <div class="box"><h1 class="tr"><span>Wydatki</span></h1></div>
+    </div>
+    <div class="container-list2">
+        <div id="bl" class="box"><h1><span>Koszty</span></h1></div>
+        <div class="box"><h1><span>Kalendarz</span></h1></div>
+        <div id="br" class="box"><h1><span>Analiza</span></h1></div>
+    </div>
 </div>
 
+
+<div class="break"></div>
 <div class="container">
     <div class="slogan">
     <h3>Zapisz się!</h3>

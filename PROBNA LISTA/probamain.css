@@ -12,7 +12,7 @@
 
 .container-list .box, .container-list2 .box {
     width: 33.33333333333%;
-    height: 50vh;
+    height: 40vh;
     text-align: center;
     background-size: cover;
     background-position: center;
@@ -20,7 +20,7 @@
 
 }
 
-h1 {
+.box > h1 {
     margin: 0;
     padding: 0;
     font-size: 2em;
@@ -38,6 +38,30 @@ h1 span {
     text-transform: uppercase;
     letter-spacing: 2px;
     display: block;
+}
+
+.tl {
+    border-top-left-radius: 45px;
+}
+
+.tr {
+    border-top-right-radius: 45px;
+}
+
+#bl {
+    border-bottom-left-radius: 45px;
+}
+
+#br {
+    border-bottom-right-radius: 45px;
+}
+
+.tl span {
+    border-top-left-radius: 45px;
+}
+
+.tr span {
+    border-top-right-radius: 45px;
 }
 
 .box:hover h1 span {
