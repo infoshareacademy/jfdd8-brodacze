@@ -13,23 +13,24 @@
 }
 
 .team {
-     display: table-cell;
+     display: block;
      position: relative;
      text-align: center;
      color: white;
-     font-size: 10em;
      vertical-align: middle;
      width: 100%;
-     padding-bottom: 5px;
+     /*padding-bottom: 5px;*/
      min-height: 172px;
      min-width: 260px;
+     font-family: 'Pacifico', cursive;
+     font-size: 8em;
+     margin-top: 60px
  }
 .tumbs {
     display: flex;
-    justify-content: space-around;
-    border-radius: 45px;
-    padding: 55px 15px 0px 15px;
-    margin: 100px 30px -10px 30px;
+    justify-content: space-between;
+    padding: 35px;
+
 }
 .text {
     margin: 0;
@@ -37,4 +38,8 @@
     background: none;
     font-size: 2em;
     transition: .5s;
+}
+.tumb {
+    border-radius: 45px;
+    padding: 15px;
 }
