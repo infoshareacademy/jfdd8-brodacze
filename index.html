@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="CSS/normalize.css/normalize.css">
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="PROBNA LISTA/probamain.css">
-    <link rel="stylesheet" href="CSS/team.css">
     <link href="https://fonts.googleapis.com/css?family=Anton&amp;subset=latin-ext,vietnamese" rel="stylesheet">
     <link rel="stylesheet" href="CSS/animate.css">
     <link rel="stylesheet"
@@ -15,18 +14,17 @@
           integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
           crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-    <link rel="stylesheet" href="/bootstrap-3.3.7-dist/bootstrap.min.css">
     </head>
 <body>
 <div  class="menu">
 <ul class="menu1">
-    <li><a href="/home" class="active"><span>Home</span></a></li>
-    <li><a href="/services"><span>Services</span></a></li>
-    <li><a href="/about"><span>About</span></a></li>
-    <li><a href="/contact"><span>Contact</span></a></li>
+    <li><a href="#start" class="active"><span>Home</span></a></li>
+    <li><a href="#oferta"><span>Oferta</span></a></li>
+    <li><a href="#onas"><span>Zespół</span></a></li>
+    <li><a href="#contact"><span>Kontakt</span></a></li>
 </ul>
 </div>
-<div class="podmenu"></div>
+<div class="podmenu" id="start"></div>
 <div class="container">
     <div class="slogan">
         <h1 class="animated rubberBand">e-Budżet</h1><br>
@@ -34,7 +32,7 @@
         <a href="#break"><img src="src/arrow.png"></a>
     </div>
 </div>
-<div class="break" id="break"></div>
+<div class="break" id="oferta"></div>
 <div class="container" id="lista">
     <div class="container-list">
         <div class="box"><h1 class="tl"><span>Logowanie</span></h1></div>
@@ -47,25 +45,19 @@
         <div id="br" class="box"><h1><span>Analiza</span></h1></div>
     </div>
 </div>
-
+<div class="break" id="onas"></div>
 <div class="container">
-    <!--<div class="row">-->
-        <div class="col-xs-12">
-            <h1 class="team">To my dla Ciebie pracujemy</h1><br>
-        </div>
-        <div class="col-xs-3">
-            <div class="tumbs">
-                <div class="tumb"><a href="#" class="img-thumbnail img-rounded"><img src="src/pic1.png"></a></div>
-                <div class="tumb"><a href="#" class="img-thumbnail img-rounded"><img src="src/pic2.png"></a></div>
-                <div class="tumb"><a href="#" class="img-thumbnail img-rounded"><img src="src/pic3.png"></a></div>
-                <div class="tumb"><a href="#" class="img-thumbnail img-rounded"><img src="src/pic4.png"></a></div>
+            <div class="slogan1"><h3>To my dla Ciebie pracujemy:</h3></div>
+            <div class="photos">
+                <div class="photo"><a target="_blank" href="https://github.com/jarek-pieprzak"><img src="src/pic1.png" alt="Jarek"></a></div>
+                <div class="photo"><a target="_blank" href="https://github.com/siminskilukasz"><img src="src/pic2.png" alt="Łukasz"></a></div>
+                <div class="photo"><a target="_blank" href="https://github.com/MaciejSzymanski1"><img src="src/pic3.png" alt="Maciuś"></a></div>
+                <div class="photo"><a target="_blank" href="https://github.com/tomekbuszman"><img src="src/pic4.png" alt="Tomuś"></a></div>
             </div>
-        </div>
-    <!--</div>-->
 </div>
 
 
-<div class="break"></div>
+<div class="break" id="contact"></div>
 <div class="container">
     <div class="slogan">
     <h3>Zapisz się!</h3>
