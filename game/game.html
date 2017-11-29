@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .table {
+            display: flex;
+            width: 500px;
+            height: 500px;
+            align-items: stretch;
+            flex-direction: column;
+        }
+
+        .table > div {
+            display: flex;
+            flex-grow: 1;
+        }
+
+        .table > div > div {
+            flex-grow: 1;
+            margin: 10px;
+            border: 1px solid black;
+        }
+
+        .player {
+            background: #c00;
+        }
+        .fruit {
+            background: #0c0;
+        }
+    </style>
+</head>
+<body>
+<section id="app">
+
+</section>
+<script src="./game.js"></script>
+<script>
+    var player = [{ x: 5 }],
+        fruit = getRandomPos(10, 10),
+        directionX = 1,
+        directionY = 0
+    ;
+
+    var table = createTable(player, fruit);
+    showElement('app', table);
+
+    setInterval(function () {
+        console.log(player);
+        var head = {
+            x: player[0].x,
+            y: player[0].y
+        };
+        var newHead = {
+            x: (head.x + directionX + 10) % 10,
+            y: (head.y + directionY + 10) % 10
+        };
+        player.unshift(newHead);
+        player.pop();
+
+        if (newHead.x === fruit.x && newHead.y === fruit.y) {
+            player.push(head);
+            fruit = getRandomPos(10, 10)
+        }
+
+        var table = createTable(player, fruit);
+        showElement('app', table);
+    }, 500);
+
+    window.addEventListener('keydown', function (event) {
+        console.log(event);
+        if (event.key === 'ArrowRight') {
+            directionX = 1;
+            directionY = 0;
+        }
+        if (event.key === 'ArrowLeft') {
+            directionX = -1;
+            directionY = 0;
+        }
+        if (event.key === 'ArrowUp') {
+            event.preventDefault();
+            directionY = -1;
+            directionX = 0;
+        }
+        if (event.key === 'ArrowDown') {
+            event.preventDefault();
+            directionY = 1;
+            directionX = 0;
+        }
+    });
+
+</script>
+</body>
+</html>
