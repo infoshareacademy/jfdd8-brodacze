@@ -183,3 +183,11 @@ span > img {
     border-radius: 45px;
     margin-top: 2vh;
 }
+
+      /*background-color: #74AF75;*/
+
+
+.contacts {
+    display: inline-block;
+    float: right;
+}
