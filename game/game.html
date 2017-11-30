@@ -20,6 +20,7 @@
             height: 500px;
             align-items: stretch;
             flex-direction: column;
+            border: 1px solid black
         }
 
         .table > div {
@@ -29,8 +30,7 @@
 
         .table > div > div {
             flex-grow: 1;
-            margin: 10px;
-            border: 1px solid black;
+            margin: 1px;
         }
 
         .player {
@@ -50,8 +50,7 @@
 <script>
     var player = [{ x: 5, y: 9}],
         fruit = getRandomPos(10, 0),
-        directionX = 0,
-        directionY = 0
+        directionX = 0
     ;
 
     var table = createTable(player, fruit);
@@ -67,6 +66,7 @@
             x: Math.max(Math.min(head.x + directionX, 9), 0),
             y: 9
         };
+
         directionX = 0;
         player.unshift(newHead);
         player.pop();
@@ -80,15 +80,14 @@
         showElement('app', table);
     }, 500);
 
+
     window.addEventListener('keydown', function (event) {
         console.log(event);
         if (event.key === 'ArrowRight') {
             directionX = 1;
-            directionY = 0;
         }
         if (event.key === 'ArrowLeft') {
             directionX = -1;
-            directionY = 0;
         }
     });
 
