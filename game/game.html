@@ -40,15 +40,16 @@
             background: #0c0;
         }
     </style>
+
 </head>
 <body>
 <section id="app">
 
 </section>
-<script src="./game.js"></script>
+<script src="game.js"></script>
 <script>
     var player = [{ x: 5, y: 9}],
-        fruit = getRandomPos(10, 10),
+        fruit = getRandomPos(10, 0),
         directionX = 0,
         directionY = 0
     ;
@@ -62,12 +63,11 @@
             x: player[0].x,
             y: player[0].y
         };
-
         var newHead = {
-            x: Math.min(head.x + directionX, 9),
+            x: Math.max(Math.min(head.x + directionX, 9), 0),
             y: 9
         };
-            directionX = 0;
+        directionX = 0;
         player.unshift(newHead);
         player.pop();
 
@@ -89,16 +89,6 @@
         if (event.key === 'ArrowLeft') {
             directionX = -1;
             directionY = 0;
-        }
-        if (event.key === 'ArrowUp') {
-            event.preventDefault();
-            directionY = -1;
-            directionX = 0;
-        }
-        if (event.key === 'ArrowDown') {
-            event.preventDefault();
-            directionY = 1;
-            directionX = 0;
         }
     });
 
