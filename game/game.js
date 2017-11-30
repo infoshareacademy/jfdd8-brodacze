@@ -34,6 +34,6 @@ function showElement(parentId, element) {
 function getRandomPos(maxX, maxY) {
     return {
         x: Math.floor(Math.random() * maxX),
-        y: Math.floor(Math.random() * maxY)
+        y: 0
     }
 }
