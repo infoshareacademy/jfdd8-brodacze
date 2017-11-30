@@ -58,6 +58,23 @@
 
     setInterval(function () {
         console.log(player);
+
+
+
+        var table = createTable(player, fruit);
+        showElement('app', table);
+    }, 500);
+
+
+    window.addEventListener('keydown', function (event) {
+        console.log(event);
+        if (event.key === 'ArrowRight') {
+            directionX = 1;
+        }
+        if (event.key === 'ArrowLeft') {
+            directionX = -1;
+        }
+
         var head = {
             x: player[0].x,
             y: player[0].y
@@ -75,20 +92,8 @@
             player.push(head);
             fruit = getRandomPos(10, 10)
         }
-
         var table = createTable(player, fruit);
         showElement('app', table);
-    }, 500);
-
-
-    window.addEventListener('keydown', function (event) {
-        console.log(event);
-        if (event.key === 'ArrowRight') {
-            directionX = 1;
-        }
-        if (event.key === 'ArrowLeft') {
-            directionX = -1;
-        }
     });
 
 </script>
