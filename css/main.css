@@ -174,9 +174,13 @@ span > img {
     max-height: 150px;
 }
 
-.btn-primary {
+.submit {
     border-radius: 45px;
-    margin-top: 2vh;
+    margin-top: 5vh;
+    font-size: 3vh;
+    background-color: #7C64BA;
+    border: none;
+    padding: 10px;
 }
 
 .form-control {
@@ -191,3 +195,29 @@ span > img {
     display: inline-block;
     float: right;
 }
+
+.container-form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 50px;
+}
+
+h3 {
+    text-align: center;
+}
+
+#form {
+    display: inline-flex;
+}
+
+div.form {
+    display: flex;
+    justify-content: center;
+}
+
+div.button {
+    display: block;
+    text-align: center;
+}
+
