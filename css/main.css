@@ -1,3 +1,7 @@
+#features > .container {
+
+}
+
 .cover {
     height: 900px;
     background-size: cover;
@@ -108,6 +112,11 @@
         margin-bottom: 50px;
     }
 }
+div > .features {
+    ms-transform: matrix(1, -0.3, 0, 1, 0, 0); /* IE 9 */
+    -webkit-transform: matrix(1, -0.3, 0, 1, 0, 0); /* Safari */
+    transform: matrix(1, -0.3, 0, 1, 0, 0); /* Standard syntax */
+}
 .feature-center .icon i {
     display: table-cell;
     vertical-align: middle;
@@ -116,6 +125,7 @@
     line-height: 40px;
     color: #52d3aa;
 }
+
 .feature-center p, .feature-center h3 {
     margin-bottom: 30px;
 }
@@ -172,4 +182,8 @@ span > img {
     image-resolution: from-image;
     /*max-width: 300px;*/
     max-height: 150px;
+    clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 16%);
+}
+.icon {
+    clip-path: circle(42.2% at 50% 50%);
 }
