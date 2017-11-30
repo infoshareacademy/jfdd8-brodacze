@@ -188,9 +188,6 @@ span > img {
     margin-top: 2vh;
 }
 
-      /*background-color: #74AF75;*/
-
-
 .contacts {
     display: inline-block;
     float: right;
@@ -205,6 +202,8 @@ span > img {
 
 h3 {
     text-align: center;
+    color: #7C64BA;
+    font-weight: bold;
 }
 
 #form {
@@ -221,3 +220,29 @@ div.button {
     text-align: center;
 }
 
+
+
+.navbar-nav > li > a {
+    color:#7C64BA;
+    font-size: large;
+    background-color: lawngreen;
+
+}
+ul.nav.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-nav {
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    background-color: lawngreen;
+    -moz-border-radius-bottomleft: 45px;
+    -moz-border-radius-bottomright: 45px;
+}
+
+.form-control {
+    border-color: #7C64BA;
+    border-width: medium;
+}
