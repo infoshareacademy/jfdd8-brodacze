@@ -247,8 +247,57 @@ span > img {
     image-resolution: from-image;
     /*max-width: 300px;*/
     max-height: 150px;
-    /*clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 16%);*/
 }
+
+.submit {
+    border-radius: 45px;
+    margin-top: 5vh;
+    font-size: 3vh;
+    background-color: #7C64BA;
+    border: none;
+    padding: 10px;
+}
+
+.form-control {
+    border-radius: 45px;
+    margin-top: 2vh;
+}
+
+      /*background-color: #74AF75;*/
+
+
+.contacts {
+    display: inline-block;
+    float: right;
+}
+
+.container-form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 50px;
+}
+
+h3 {
+    text-align: center;
+}
+
+#form {
+    display: inline-flex;
+}
+
+div.form {
+    display: flex;
+    justify-content: center;
+}
+
+div.button {
+    display: block;
+    text-align: center;
+}
+
+    /*clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 16%);*/
+
 .icon {
     clip-path: circle(42.2% at 50% 50%);
 }
