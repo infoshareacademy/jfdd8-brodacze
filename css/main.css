@@ -323,6 +323,10 @@ div.button {
 }
 .member{
     font-size: .5em;
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
 }
 .description{
     display: inline-block;
