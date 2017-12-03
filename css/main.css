@@ -323,3 +323,6 @@ div.button {
 .member{
     font-size: .5em;
 }
+.description{
+    display: inline-block;
+}
