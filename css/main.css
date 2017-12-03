@@ -310,3 +310,7 @@ div.button {
 .icon {
     clip-path: circle(42.2% at 50% 50%);
 }
+
+.img-responsive {
+    max-width: 68%;
+}
