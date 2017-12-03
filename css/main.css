@@ -326,3 +326,7 @@ div.button {
 .description{
     display: inline-block;
 }
+.logos {
+    width: 35%;
+    display: inline-block;
+}
