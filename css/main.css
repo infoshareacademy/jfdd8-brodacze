@@ -310,3 +310,16 @@ div.button {
 .icon {
     clip-path: circle(42.2% at 50% 50%);
 }
+.img-circle{
+    max-width: 68%;
+}
+.team {
+    font-size: 2em;
+    display: block;
+    text-align: center;
+    padding: 25px, 0, 25px, 0;
+    padding-top: 100px;
+}
+.member{
+    font-size: .5em;
+}
