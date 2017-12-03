@@ -327,6 +327,9 @@ div.button {
     display: inline-block;
 }
 .logos {
-    width: 35%;
+    width: 15%;
     display: inline-block;
+}
+.about-us{
+    margin-bottom: 35px;
 }
