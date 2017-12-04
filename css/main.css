@@ -296,7 +296,7 @@ span > img {
     background-color: #7C64BA;
     border: none;
     padding: 10px;
-    margin-bottom: 37px;
+    margin-bottom: 45px;
 }
 
 .form-control {
@@ -374,4 +374,7 @@ div.button {
 }
 .navbar-default .navbar-nav > li > a:hover {
     color: gold;
+}
+.form{
+    padding-top: 20px;
 }
