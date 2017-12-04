@@ -338,7 +338,7 @@ div.button {
     clip-path: circle(42.2% at 50% 50%);
 }
 .img-circle{
-    max-width: 68%;
+    max-width: 40%;
 }
 .team {
     font-size: 2em;
@@ -354,6 +354,7 @@ div.button {
     animation-name: bounce;
     -webkit-transform-origin: center bottom;
     transform-origin: center bottom;
+    min-height: 260px;
 }
 .description{
     display: inline-block;
