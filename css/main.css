@@ -1,3 +1,6 @@
+body {
+    min-width: 365px;
+}
 .navbar-default {
     background-color: #9b59b6;
     border-color: #8e44ad;
@@ -233,6 +236,7 @@
 @media screen and (max-width: 768px) {
     .feature-center {
         margin-bottom: 50px;
+        height: 350px
     }
 }
 
