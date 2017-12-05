@@ -313,6 +313,7 @@ span > img {
     justify-content: space-between;
     flex-direction: column;
     padding: 50px;
+    padding-top: 80px;
     background: #56ab2f;
     background: -webkit-linear-gradient(to left, #a8e063, #56ab2f);
     background: linear-gradient(to left, #a8e063, #56ab2f);
@@ -336,6 +337,7 @@ div.form {
 div.button {
     display: block;
     text-align: center;
+    padding-bottom: 50px;
 }
 
 .icon {
