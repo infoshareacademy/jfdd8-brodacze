@@ -235,8 +235,8 @@ body {
 
 @media screen and (max-width: 768px) {
     .feature-center {
-        /*margin-bottom: 50px;*/
-        /*height: 350px*/
+        margin-bottom: 50px;
+        height: 350px
     }
 }
 
@@ -296,7 +296,6 @@ span > img {
     background-color: #7C64BA;
     border: none;
     padding: 10px;
-    margin-bottom: 45px;
 }
 
 .form-control {
@@ -350,18 +349,26 @@ div.button {
     font-size: 2em;
     display: block;
     text-align: center;
-    padding: 25px, 0, 25px, 0;
-    /*padding-top: 100px;*/
-    /*margin-bottom:55px;*/
+    padding: 25px, 0px;
+    padding-top: 100px;
 }
+
+.member img {
+    transition: all 0.5s ease-out;
+    transform: scale(1.0) rotate(0deg);
+}
+
+.member:hover img {
+    transform: scale(1.2) rotateX(10deg);
+}
+
 .member{
     font-size: .5em;
-    -webkit-animation-name: bounce;
-    animation-name: bounce;
     -webkit-transform-origin: center bottom;
     transform-origin: center bottom;
-    height: 350px;
+    min-height: 350px;
 }
+
 .description{
     display: inline-block;
 }
@@ -374,7 +381,4 @@ div.button {
 }
 .navbar-default .navbar-nav > li > a:hover {
     color: gold;
-}
-.form{
-    padding-top: 20px;
 }
