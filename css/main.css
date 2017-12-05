@@ -235,8 +235,8 @@ body {
 
 @media screen and (max-width: 768px) {
     .feature-center {
-        margin-bottom: 50px;
-        height: 350px
+        /*margin-bottom: 50px;*/
+        /*height: 350px*/
     }
 }
 
@@ -360,7 +360,7 @@ div.button {
     animation-name: bounce;
     -webkit-transform-origin: center bottom;
     transform-origin: center bottom;
-    min-height: 350px;
+    height: 350px;
 }
 .description{
     display: inline-block;
