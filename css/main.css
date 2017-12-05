@@ -373,7 +373,7 @@ div.button {
     font-size: 2em;
     display: block;
     text-align: center;
-    padding: 25px, 0px;
+    padding: 25px; 0px;
     padding-top: 100px;
 }
 
@@ -406,3 +406,13 @@ div.button {
 .navbar-default .navbar-nav > li > a:hover {
     color: gold;
 }
+
+.navbar.navbar-default {
+    background-color: #9b59b6;
+    border-color: #8e44ad;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #ecf0f1;
+}
+
