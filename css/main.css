@@ -349,18 +349,26 @@ div.button {
     font-size: 2em;
     display: block;
     text-align: center;
-    padding: 25px, 0, 25px, 0;
+    padding: 25px, 0px;
     padding-top: 100px;
-    /*margin-bottom:55px;*/
 }
+
+.member img {
+    transition: all 0.5s ease-out;
+    transform: scale(1.0) rotate(0deg);
+}
+
+.member:hover img {
+    transform: scale(1.2) rotateX(10deg);
+}
+
 .member{
     font-size: .5em;
-    -webkit-animation-name: bounce;
-    animation-name: bounce;
     -webkit-transform-origin: center bottom;
     transform-origin: center bottom;
     min-height: 350px;
 }
+
 .description{
     display: inline-block;
 }
