@@ -84,7 +84,8 @@
 <script>
     var player = [{ x: 5, y: 9}],
         fruit = getRandomPos(10, 0),
-        directionX = 0
+        directionX = 0,
+        score = 0
     ;
 
     var table = createTable(player, fruit);
@@ -96,12 +97,15 @@
 
     setInterval(function () {
         var p = player[0];
+        console.log(score);
         console.log(player);
 
         fruit.y += 1;
         if (p.x === fruit.x && p.y ===fruit.y) {
             console.log('leci');
-            fruit = getRandomPos(10, 0)
+            fruit = getRandomPos(10, 0);
+            score += 1
+
         }
 
 
