@@ -244,20 +244,12 @@ body {
     }
 }
 
-.main-logo {
-    text-align: center;
-    justify-content: center;
-}
 
-/*.main-logo > img {*/
-/*width: 100%;*/
-/*!*padding-top: 56.25%;*!*/
-/*display: block;*/
-/*}*/
-.main-logo > .img-responsive {
-    max-width: 75%;
+.img-responsive {
+    max-width: 50%;
     height: auto;
     margin: 0 auto;
+    margin-top: 10%;
 }
 
 @media screen and (min-width: 611px) {
