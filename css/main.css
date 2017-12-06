@@ -244,19 +244,8 @@ body {
     }
 }
 
-/*.main-logo {*/
-    /*text-align: center;*/
-    /*justify-content: center;*/
-/*}*/
 
-/*.main-logo > img {*/
-/*width: 100%;*/
-/*!*padding-top: 56.25%;*!*/
-/*display: block;*/
-/*}*/
-/*.main-logo > */
 .img-responsive {
-    /*margin-top: 10%;*/
     max-width: 50%;
     height: auto;
     margin: 0 auto;
