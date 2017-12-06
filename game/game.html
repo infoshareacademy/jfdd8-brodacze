@@ -56,14 +56,24 @@
     var table = createTable(player, fruit);
     showElement('app', table);
 
+    var id = 0;
+
+
+
     setInterval(function () {
+        var p = player[0];
         console.log(player);
 
+        fruit.y += 1;
+        if (p.x === fruit.x && p.y ===fruit.y) {
+            console.log('leci');
+            fruit = getRandomPos(10, 0)
+        }
 
 
         var table = createTable(player, fruit);
         showElement('app', table);
-    }, 500);
+    }, 200);
 
 
     window.addEventListener('keydown', function (event) {
