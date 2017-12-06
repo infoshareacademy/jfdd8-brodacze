@@ -5,6 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Document</title>
     <style>
         body {
@@ -32,6 +33,25 @@
             flex-grow: 1;
             margin: 1px;
         }
+        .container{
+            display: flex;
+            width: 500px;
+            height: 100px;
+        }
+        .counter{
+            display: flex;
+            width: 50%;
+            height: 100%;
+        }
+        .lives{
+            width: 7%;
+            height: 90vh;
+        }
+
+        img{
+            height: 5%;
+            display: inline-flex;
+        }
 
         .player {
             background: #c00;
@@ -45,13 +65,13 @@
 <body>
 <div>
     <div class="container">
-        <div class="lives">życia
-            <div class="hearts"><img src="../images/gameicons/heart.png"></img></div>
-            <div class="hearts"><img src="../images/gameicons/heart.png"></img></div>
-            <div class="hearts"><img src="../images/gameicons/heart.png"></img></div>
+        <div class="counter">życia
+            <div class="lives"><img src="../images/gameicons/heart.png"></img></div>
+            <div class="lives"><img src="../images/gameicons/heart.png"></img></div>
+            <div class="lives"><img src="../images/gameicons/heart.png"></img></div>
         </div>
-        <div class="score">punkty
-            <div class="counter"></div>
+        <div class="counter">punkty
+            <div class="score"></div>
         </div>
 
     </div>
