@@ -448,6 +448,7 @@ div.button {
 }
 
 .layer-bg {
+    background-size: cover;
     position: absolute;
     background: none;
     background: #56ab2f; /* fallback for old browsers */
@@ -458,6 +459,7 @@ div.button {
 }
 
 .layer-1 {
+    background-size: cover;
     background-image: url("../images/par1.png");
     background-position: center;
     z-index: 29;
@@ -465,6 +467,7 @@ div.button {
 }
 
 .layer-2 {
+    background-size: cover;
     background-image: url("../images/par2.png");
     background-position: center;
     z-index: 28;
@@ -472,6 +475,7 @@ div.button {
 }
 
 .layer-3 {
+    background-size: cover;
     background-image: url("../images/par3.png");
     background-position: center;
     z-index: 27;
@@ -479,6 +483,7 @@ div.button {
 }
 
 .layer-4 {
+    background-size: cover;
     background-image: url("../images/par4.png");
     background-position: center;
     z-index: 26;
