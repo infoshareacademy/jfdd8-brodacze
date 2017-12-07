@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>E-Budżet</title>
+    <title>Pocketbook</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -34,59 +34,111 @@
         </div>
     </div>
 </nav>
-<div class="cover" role="banner">
+<!--<div class="cover" role="banner">-->
     <header class="paralax">
-        <div class="paralax-1"></div>
-        <div class="paralax-2"></div>
-        <div class="paralax-3"></div>
-        <div class="paralax-4"></div>
-        <div class="col-md-8 col-md-offset-2 text-center">
-
+        <div class="col-md-8 col-md-offset-2 text-center logo-block">
             <img class="img-responsive" src="images/pocketbook.png"/>
             <p><a href="#" class="btn btn-danger btn-lg">Zapisz się!</a></p>
         </div>
+        <div id='money'>
+            <div class='layer-bg layer' data-depth='-0.10' data-type='parallax'></div>
+            <div class='layer-1 layer' data-depth='-0.20' data-type='parallax'></div>
+            <div class='layer-2 layer' data-depth='-0.50' data-type='parallax'></div>
+            <div class='layer-3 layer' data-depth='-0.80' data-type='parallax'></div>
+            <div class='layer-overlay layer' data-depth='-0.85' data-type='parallax'></div>
+            <div class='layer-4 layer' data-depth='-1.00' data-type='parallax'></div>
+        </div>
+
     </header>
-</div>
-<div class="col-xs-6 col-md-3 col-sm-3">
-    <div class="feature-center">
-						<span class="icon">
-						<img src="images/1.png"/>
+<!--</div>-->
+<!--<div>-->
+<!--<div class="col-xs-6 col-md-3 col-sm-3">-->
+    <!--<div class="feature-center">-->
+						<!--<span class="icon">-->
+						<!--<img src="images/1.png"/>-->
+                        <!--</span>-->
+        <!--<h3>Logowanie</h3>-->
+        <!--<p>Po uzyskaniu dostępu do aplikacji, przedstawiona zostanie historia transakcji z minionych tygodni-->
+            <!--oraz podana możliwość oszczędności w poszczególnych kategoriach.</p>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="col-xs-6 col-md-3 col-sm-3">-->
+    <!--<div class="feature-center">-->
+						<!--<span class="icon">-->
+						<!--<img src="images/2.png"/>-->
+                        <!--</span>-->
+        <!--<h3>Wpływy</h3>-->
+        <!--<p>Wszystkie wartości generujące przychód w budżecie z uwzględnieniem poszczególnych kategorii,-->
+            <!--np. zarobki, oszczędności itp.</p>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="col-xs-6 col-md-3 col-sm-3">-->
+    <!--<div class="feature-center">-->
+						<!--<span class="icon">-->
+						<!--<img src="images/3.png"/>-->
+                        <!--</span>-->
+        <!--<h3>Wydatki</h3>-->
+        <!--<p>Wartości obniżające stan oszczędności z podziałem na kategorie, w tym m.in. koszty stałe-->
+            <!--(jak czynsz, energia, gaz, media).</p>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="col-xs-6 col-md-3 col-sm-3">-->
+    <!--<div class="feature-center">-->
+						<!--<span class="icon">-->
+						<!--<img src="images/4.png"/>-->
+                        <!--</span>-->
+        <!--<h3>Analiza</h3>-->
+        <!--<p>Graficzne (wykres, kalendarz) przedstawienie porównujące dochoód i poniesione koszta pokazujące,-->
+            <!--jak na przestrzeni miesiąca kształtował się budżet.</p>-->
+    <!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<div id="features">
+    <div class="container features">
+        <div class="row">
+            <div class="col-xs-6 col-md-3 col-sm-3">
+                <div class="feature-center">
+                        <span class="icon">
+                        <img src="images/1.png"/>
                         </span>
-        <h3>Logowanie</h3>
-        <p>Po uzyskaniu dostępu do aplikacji, przedstawiona zostanie historia transakcji z minionych tygodni
-            oraz podana możliwość oszczędności w poszczególnych kategoriach.</p>
-    </div>
-</div>
-<div class="col-xs-6 col-md-3 col-sm-3">
-    <div class="feature-center">
-						<span class="icon">
-						<img src="images/2.png"/>
+                    <h3>Logowanie</h3>
+                    <p>Po uzyskaniu dostępu do aplikacji, przedstawiona zostanie historia transakcji z minionych tygodni
+                        oraz podana możliwość oszczędności w poszczególnych kategoriach.</p>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-3">
+                <div class="feature-center">
+                        <span class="icon">
+                        <img src="images/2.png"/>
                         </span>
-        <h3>Wpływy</h3>
-        <p>Wszystkie wartości generujące przychód w budżecie z uwzględnieniem poszczególnych kategorii,
-            np. zarobki, oszczędności itp.</p>
-    </div>
-</div>
-<div class="col-xs-6 col-md-3 col-sm-3">
-    <div class="feature-center">
-						<span class="icon">
-						<img src="images/3.png"/>
+                    <h3>Wpływy</h3>
+                    <p>Wszystkie wartości generujące przychód w budżecie z uwzględnieniem poszczególnych kategorii,
+                        np. zarobki, oszczędności itp.</p>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-3">
+                <div class="feature-center">
+                        <span class="icon">
+                        <img src="images/3.png"/>
                         </span>
-        <h3>Wydatki</h3>
-        <p>Wartości obniżające stan oszczędności z podziałem na kategorie, w tym m.in. koszty stałe
-            (jak czynsz, energia, gaz, media).</p>
-    </div>
-</div>
-<div class="col-xs-6 col-md-3 col-sm-3">
-    <div class="feature-center">
-						<span class="icon">
-						<img src="images/4.png"/>
+                    <h3>Wydatki</h3>
+                    <p>Wartości obniżające stan oszczędności z podziałem na kategorie, w tym m.in. koszty stałe
+                        (jak czynsz, energia, gaz, media).</p>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 col-sm-3">
+                <div class="feature-center">
+                        <span class="icon">
+                        <img src="images/4.png"/>
                         </span>
-        <h3>Analiza</h3>
-        <p>Graficzne (wykres, kalendarz) przedstawienie porównujące dochoód i poniesione koszta pokazujące,
-            jak na przestrzeni miesiąca kształtował się budżet.</p>
+                    <h3>Analiza</h3>
+                    <p>Graficzne (wykres, kalendarz) przedstawienie porównujące dochoód i poniesione koszta pokazujące,
+                        jak na przestrzeni miesiąca kształtował się budżet.</p>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
 </div>
 <div class="container-form">
     <header class="header-form">
@@ -198,6 +250,27 @@
     </section>
 
 </div>
+<script>
+    (function() {
+        window.addEventListener('scroll', function(event) {
+            var depth, i, layer, layers, len, movement, topDistance, translate3d;
+            topDistance = this.pageYOffset;
+            layers = document.querySelectorAll("[data-type='parallax']");
+            for (i = 0, len = layers.length; i < len; i++) {
+                layer = layers[i];
+                depth = layer.getAttribute('data-depth');
+                movement = -(topDistance * depth);
+                translate3d = 'translate3d(0, ' + movement + 'px, 0)';
+                layer.style['-webkit-transform'] = translate3d;
+                layer.style['-moz-transform'] = translate3d;
+                layer.style['-ms-transform'] = translate3d;
+                layer.style['-o-transform'] = translate3d;
+                layer.style.transform = translate3d;
+            }
+        });
+
+    }).call(this);
+</script>
 </body>
 </html>
 
