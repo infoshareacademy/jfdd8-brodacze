@@ -102,6 +102,7 @@ body {
     clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
     z-index: 0;
     overflow: hidden;
+    margin-bottom: 85px;
 
 }
 .paralax {
