@@ -145,12 +145,6 @@ body {
     .cover .tablec {
         height: 600px;
     }
-    .paralax {
-        background: #56ab2f;
-        background: -webkit-linear-gradient(to left, #a8e063, #56ab2f);
-        background: linear-gradient(to left, #a8e063, #56ab2f);
-        transform: skewY(2deg);
-    }
 }
 
 .cover.cover-sm {
