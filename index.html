@@ -34,19 +34,22 @@
         </div>
     </div>
 </nav>
-<div class="cover" role="banner">
+<!--<div class="cover" role="banner">-->
     <header class="paralax">
-        <div class="paralax-1"></div>
-        <div class="paralax-2"></div>
-        <div class="paralax-3"></div>
-        <div class="paralax-4"></div>
+        <div id='hero'>
+            <div class='layer-bg layer' data-depth='-0.10' data-type='parallax'></div>
+            <div class='layer-1 layer' data-depth='-0.20' data-type='parallax'></div>
+            <div class='layer-2 layer' data-depth='-0.50' data-type='parallax'></div>
+            <div class='layer-3 layer' data-depth='-0.80' data-type='parallax'></div>
+            <div class='layer-overlay layer' data-depth='-0.85' data-type='parallax'></div>
+            <div class='layer-4 layer' data-depth='-1.00' data-type='parallax'></div>
+        </div>
         <div class="col-md-8 col-md-offset-2 text-center">
-
             <img class="img-responsive" src="images/pocketbook.png"/>
             <p><a href="#" class="btn btn-danger btn-lg">Zapisz się!</a></p>
         </div>
     </header>
-</div>
+<!--</div>-->
 <div class="col-xs-6 col-md-3 col-sm-3">
     <div class="feature-center">
 						<span class="icon">
@@ -198,6 +201,27 @@
     </section>
 
 </div>
+<script>
+    (function() {
+        window.addEventListener('scroll', function(event) {
+            var depth, i, layer, layers, len, movement, topDistance, translate3d;
+            topDistance = this.pageYOffset;
+            layers = document.querySelectorAll("[data-type='parallax']");
+            for (i = 0, len = layers.length; i < len; i++) {
+                layer = layers[i];
+                depth = layer.getAttribute('data-depth');
+                movement = -(topDistance * depth);
+                translate3d = 'translate3d(0, ' + movement + 'px, 0)';
+                layer.style['-webkit-transform'] = translate3d;
+                layer.style['-moz-transform'] = translate3d;
+                layer.style['-ms-transform'] = translate3d;
+                layer.style['-o-transform'] = translate3d;
+                layer.style.transform = translate3d;
+            }
+        });
+
+    }).call(this);
+</script>
 </body>
 </html>
 
