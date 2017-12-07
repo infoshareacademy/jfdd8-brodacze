@@ -238,7 +238,20 @@ body {
         margin-bottom: 50px;
     }
 }
-
+/*.margines {*/
+    /*-webkit-transform: rotate(7deg);*/
+    /*-moz-transform: rotate(7deg);*/
+    /*-ms-transform: rotate(7deg);*/
+    /*-o-transform: rotate(7deg);*/
+    /*transform: rotate(7deg);*/
+    /*position: absolute;*/
+    /*left:-33px;*/
+    /*top: -107px;*/
+    /*width: 140%;*/
+    /*height: 527px;*/
+    /*outline:1px solid red;*/
+    /*background: #fff;*/
+/*}*/
 .feature-center .icon i {
     display: table-cell;
     vertical-align: middle;
