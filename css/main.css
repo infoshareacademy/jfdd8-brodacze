@@ -87,6 +87,7 @@ body {
     }
 }
 
+
 .cover {
     height: 900px;
     background-size: cover;
@@ -95,44 +96,15 @@ body {
     position: relative;
     float: left;
     width: 100%;
-    background: #56ab2f; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #a8e063, #56ab2f); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
-    clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
-    z-index: 0;
+    /*background: #56ab2f; !* fallback for old browsers *!*/
+    /*background: -webkit-linear-gradient(to left, #a8e063, #56ab2f); !* Chrome 10-25, Safari 5.1-6 *!*/
+    /*background: linear-gradient(to left, #a8e063, #56ab2f); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+    /*-webkit-clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);*/
+    /*clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);*/
+    /*z-index: 0;*/
     overflow: hidden;
     margin-bottom: 85px;
 
-}
-.paralax {
-    position: static;
-    z-index: 0;
-    width: 100%;
-}
-
-.paralax-1 {
-    background-image: url("../images/par1.png");
-    z-index: 4;
-    width: 100%;
-}
-
-.paralax-2 {
-    background-image: url("../images/par2.png");
-    z-index: 3;
-    width: 100%;
-}
-
-.paralax-3 {
-    background-image: url("../images/par3.png");
-    z-index: 2;
-    width: 100%;
-}
-
-.paralax-4 {
-    background-image: url("../images/par4.png");
-    z-index: 1;
-    width: 100%;
 }
 
 .cover > .container {
@@ -251,6 +223,7 @@ body {
     height: auto;
     margin: 0 auto;
     margin-top: 10%;
+    z-index: 30;
 }
 
 @media screen and (min-width: 611px) {
@@ -442,4 +415,115 @@ div.button {
 
 .navbar-default .navbar-nav > li > a:hover {
     color: gold;
+}
+
+
+#money {
+    height: 900px;
+    overflow: hidden;
+    position: relative;
+}
+
+/*#content {*/
+/*background-color: #130d0a;*/
+/*}*/
+
+.layer {
+    background-position: bottom center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+    position: relative;
+    z-index: 1;
+}
+
+#money-mobile {
+    display: none;
+    background: url("../images/złączony.png") no-repeat center bottom/cover;
+    height: 320px;
+}
+
+.paralax {
+    position: relative;
+}
+
+.logo-block {
+    position: relative;
+    z-index: 30;
+}
+
+#money {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#money, .layer {
+    background-size: cover;
+}
+
+.layer-bg {
+    background-size: cover;
+    position: absolute;
+    background: none;
+    background: #56ab2f; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #a8e063, #56ab2f); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
+    clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
+}
+
+.layer-1 {
+    background-size: cover;
+    background-image: url("../images/par1.png");
+    background-position: center;
+    z-index: 29;
+    position: absolute;
+}
+
+.layer-2 {
+    background-size: cover;
+    background-image: url("../images/par2.png");
+    background-position: center;
+    z-index: 28;
+    position: absolute;
+}
+
+.layer-3 {
+    background-size: cover;
+    background-image: url("../images/par3.png");
+    background-position: center;
+    z-index: 27;
+    position: absolute;
+}
+
+.layer-4 {
+    background-size: cover;
+    background-image: url("../images/par4.png");
+    background-position: center;
+    z-index: 26;
+    position: absolute;
+}
+
+/*.layer-overlay {*/
+/*background-image: url("images/par1.png");*/
+/*background-position: center;*/
+/*}*/
+
+@media only screen and (max-width: 768px) {
+    #money {
+        height: 600px;
+        background: #56ab2f; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #a8e063, #56ab2f); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        -webkit-clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
+        clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
+    }
+
+    #money-mobile {
+        display: block;
+    }
 }
