@@ -479,6 +479,7 @@ div.button {
 .logo-block {
     position: relative;
     z-index: 30;
+    float: none;
 }
 
 #money {
