@@ -87,7 +87,23 @@ body {
     }
 }
 
+.skew {
+    background: #56ab2f;
+    background: -webkit-linear-gradient(to left, #a8e063, #56ab2f);
+    background: linear-gradient(to left, #a8e063, #56ab2f);
+    transform: skewY(2deg);
+}
+.skew1 {
+    background: white;
+    transform: skewY(2deg);
+}
 
+.unskew {
+    transform: skewY(-2deg);
+}
+.unskew1 {
+    transform: skewY(-2deg);
+}
 .cover {
     height: 900px;
     background-size: cover;
@@ -128,6 +144,12 @@ body {
     .cover .table,
     .cover .tablec {
         height: 600px;
+    }
+    .paralax {
+        background: #56ab2f;
+        background: -webkit-linear-gradient(to left, #a8e063, #56ab2f);
+        background: linear-gradient(to left, #a8e063, #56ab2f);
+        transform: skewY(2deg);
     }
 }
 
@@ -356,8 +378,8 @@ span > img {
     background: #56ab2f;
     background: -webkit-linear-gradient(to left, #a8e063, #56ab2f);
     background: linear-gradient(to left, #a8e063, #56ab2f);
-    -webkit-clip-path: polygon(100% 20%, 100% 100%, 0 80%, 0 0);
-    clip-path: polygon(100% 20%, 100% 100%, 0 80%, 0 0);
+    /*-webkit-clip-path: polygon(100% 20%, 100% 100%, 0 80%, 0 0);*/
+    /*clip-path: polygon(100% 20%, 100% 100%, 0 80%, 0 0);*/
 }
 
 h3 {
@@ -484,8 +506,8 @@ div.button {
     background: #56ab2f; /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #a8e063, #56ab2f); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
-    clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
+    /*-webkit-clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);*/
+    /*clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);*/
 }
 
 .layer-1 {
@@ -531,8 +553,8 @@ div.button {
         background: #56ab2f; /* fallback for old browsers */
         background: -webkit-linear-gradient(to left, #a8e063, #56ab2f); /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to left, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        -webkit-clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
-        clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
+        /*-webkit-clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);*/
+        /*clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);*/
     }
 
     #money-mobile {
