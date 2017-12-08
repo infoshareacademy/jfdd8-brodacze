@@ -254,20 +254,6 @@ body {
         margin-bottom: 50px;
     }
 }
-/*.margines {*/
-    /*-webkit-transform: rotate(7deg);*/
-    /*-moz-transform: rotate(7deg);*/
-    /*-ms-transform: rotate(7deg);*/
-    /*-o-transform: rotate(7deg);*/
-    /*transform: rotate(7deg);*/
-    /*position: absolute;*/
-    /*left:-33px;*/
-    /*top: -107px;*/
-    /*width: 140%;*/
-    /*height: 527px;*/
-    /*outline:1px solid red;*/
-    /*background: #fff;*/
-/*}*/
 .feature-center .icon i {
     display: table-cell;
     vertical-align: middle;
@@ -277,9 +263,6 @@ body {
     color: #52d3aa;
 }
 
-.feature-center p, .feature-center h3 {
-    /*margin-bottom: 30px;*/
-}
 
 .feature-center h3 {
     text-transform: uppercase;
@@ -451,11 +434,6 @@ div.button {
     overflow: hidden;
     position: relative;
 }
-
-/*#content {*/
-/*background-color: #130d0a;*/
-/*}*/
-
 .layer {
     background-position: bottom center;
     background-size: auto;
