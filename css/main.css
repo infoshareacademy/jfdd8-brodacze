@@ -429,6 +429,30 @@ div.button {
     color: gold;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    padding-top: 150px;
+    background: #56ab2f;
+    background: -webkit-linear-gradient(to left, #a8e063, #56ab2f);
+    background: linear-gradient(to left, #a8e063, #56ab2f);
+    -webkit-clip-path: polygon(100% 20%, 100% 100%, 0 80%, 0 0);
+    clip-path: polygon(100% 20%, 100% 100%, 0 100%, 0 0);
+}
+.container-features {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 50px;
+    padding-top: 80px;
+}
+
+#features {
+    width: 100%;
+    text-align: center;
+}
 
 #money {
     height: 900px;
