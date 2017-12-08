@@ -109,6 +109,14 @@ body {
 .logo {
     padding-top: 7em;
 }
+.logo-min {
+    float: left;
+    padding-right: 15px;
+    padding-top: 7.5px;
+    height: 40px;
+    width: auto;
+
+}
 
 .cover {
     height: 900px;
