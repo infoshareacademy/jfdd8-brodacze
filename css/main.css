@@ -273,7 +273,7 @@ body {
 
 @media screen and (max-width: 768px) {
     .feature-center {
-        margin-bottom: 50px;
+        /*margin-bottom: 50px;*/
         height: 350px
     }
 }
@@ -393,7 +393,7 @@ div.button {
     display: block;
     text-align: center;
     padding: 25px, 0px;
-    padding-top: 100px;
+    padding-top: 25px;
 }
 
 .member img {
@@ -409,7 +409,7 @@ div.button {
     font-size: .5em;
     -webkit-transform-origin: center bottom;
     transform-origin: center bottom;
-    min-height: 350px;
+    /*min-height: 350px;*/
 }
 
 .description {
@@ -422,7 +422,7 @@ div.button {
 }
 
 .about-us {
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
