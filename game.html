@@ -23,15 +23,19 @@
         justify-content: center;
         height: 100vh;
         background-image: url("images/money.jpg");
-        background-size: contain;
+        background-size: cover;
     }
 
     .table {
         display: flex;
-        width: 800px;
-        height: 800px;
+        width: 650px;
+        height: 650px;
         align-items: stretch;
         flex-direction: column;
+        background-color: antiquewhite;
+        background-size: auto;
+        opacity: 1;
+        border-radius: 40px;
     }
 
     .table > div {
@@ -42,7 +46,7 @@
     .table > div > div {
         flex-grow: 1;
         margin: 10px;
-        border: 1px solid black;
+        /*border: 1px solid black;*/
     }
 
     .egg {
@@ -50,7 +54,7 @@
     }
 
     .basket {
-        background: #c00;
+        background-image: url("images/basket.png");
     }
 </style>
 
