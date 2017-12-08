@@ -1,3 +1,20 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <title>Pocketbook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
 <style>
     body {
         display: flex;
@@ -5,12 +22,14 @@
         align-items: center;
         justify-content: center;
         height: 100vh;
+        background-image: url("images/money.jpg");
+        background-size: contain;
     }
 
     .table {
         display: flex;
-        width: 500px;
-        height: 500px;
+        width: 800px;
+        height: 800px;
         align-items: stretch;
         flex-direction: column;
     }
@@ -27,7 +46,7 @@
     }
 
     .egg {
-        background: #0c0;
+        background-image: url("images/coin.png");
     }
 
     .basket {
@@ -35,6 +54,7 @@
     }
 </style>
 
+<body>
 <div id="score">0</div>
 <div id="app"></div>
 <button id="start-game">Start</button>
@@ -170,4 +190,5 @@
         }
     })
 </script>
-
+</body>
+</html>
