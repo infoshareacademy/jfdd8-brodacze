@@ -11,33 +11,36 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container-fluid">
-        <div class="navbar-header ">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="example-navbar-collapse">
-                <span class="sr-only">Rozwiń nawigację</span>
-                <span class="icon-bar"></span>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
+            <a class="navbar-brand" href="#top">pocketbook</a>
         </div>
-        <div class="collapse navbar-collapse " id="example-navbar-collapse">
+        <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#strona główna">Strona główna</a></li>
-                <li class="active"><a href="#">Funkcje</a></li>
-                <li class="active"><a href="#formularz">Dołącz!</a></li>
-                <li class="active"><a href="#">Zespół</a></li>
+                <li class="active"><a href="#top">Strona główna</a></li>
+                <li><a href="#features">Funkcje</a></li>
+                <li><a href="#form">Zapisz się na premierę!</a></li>
+                <li><a href="#team">Zespół</a></li>
             </ul>
         </div>
     </div>
 </nav>
-    <header class="paralax skew">
+
+    <header id="top" class="paralax skew">
         <div class="col-md-8 col-md-offset-2 text-center logo-block unskew">
             <img class="img-responsive" src="images/pocketbook.png"/>
-            <p class="emy"><a href="#" class="btn btn-danger btn-lg">Zapisz się!</a></p>
+          <p class="emy"><a href="#form" class="btn btn-danger btn-lg">Zapisz się!</a></p>
         </div>
         <div id='money' class="unskew">
             <div class='layer-bg layer' data-depth='-0.10' data-type='parallax'></div>
@@ -50,7 +53,7 @@
     </header>
 <div id="features" class="container-fluid skew1">
     <!--<div class="margines"></div>-->
-    <div class="container features unskew1">
+    <div class="container-features unskew1">
         <div class="row">
             <div class="col-xs-6 col-md-3 col-sm-3">
                 <div class="feature-center">
@@ -95,7 +98,7 @@
         </div>
     </div>
 </div>
-<div class="container-form skew">
+<div id="form" class="container-form skew">
     <header class="header-form unskew">
         <h3>Zarejestruj się na premierę</h3>
     </header>
@@ -204,7 +207,61 @@
     </section>
 
 </div>
+
+<footer>
+    <p>Prawa autorskie: Brodacze Team
+        <br>Skontaktuj się z nami: <a href="mailto:brodaczegroup@gmail.com">brodaczegroup@gmail.com</a></br>
+        <br><a href="#top">GÓRA</a></br>
+    </p>
+</footer>
+
 <script>
+    $(".nav a").on("click", function () {
+        $(".nav").find(".active").removeClass("active");
+        $(this).parent().addClass("active");
+    });
+
+    $(document).ready(function () {
+        $(document).on("scroll", onScroll);
+
+        //smoothscroll
+        $('a[href^="#"]').on('click', function (e) {
+            e.preventDefault();
+            $(document).off("scroll");
+
+            $('a').each(function () {
+                $(this).removeClass('active');
+            })
+            $(this).addClass('active');
+
+            var target = this.hash,
+                menu = target;
+            $target = $(target);
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top+2
+            }, 500, 'swing', function () {
+                window.location.hash = target;
+                $(document).on("scroll", onScroll);
+            });
+        });
+    });
+
+    function onScroll(event){
+        var scrollPos = $(document).scrollTop();
+        $('#myNavbar a').each(function () {
+            var currLink = $(this);
+            var refElement = $(currLink.attr("href"));
+            if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                $('#myNavbar ul li a').removeClass("active");
+                currLink.addClass("active");
+            }
+            else{
+                currLink.removeClass("active");
+            }
+        });
+    }
+
+
     (function() {
         window.addEventListener('scroll', function(event) {
             var depth, i, layer, layers, len, movement, topDistance, translate3d;
