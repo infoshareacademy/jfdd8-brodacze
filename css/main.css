@@ -28,13 +28,15 @@ body {
     color: #ecdbff;
 }
 
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav > .active > a {
     color: #ecdbff;
     background-color: #8e44ad;
 }
-
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: gold;
+    background-color: forestgreen;
+}
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
@@ -403,7 +405,12 @@ div.button {
 .about-us{
     margin-bottom: 35px;
 }
-.navbar-default .navbar-nav > li > a:hover {
+
+/*.navbar-default .navbar-nav > li > a {*/
+    /*color: #ecf0f1;*/
+/*}*/
+.navbar-default .navbar-nav > li > .active >a:hover
+{
     color: gold;
 }
 
@@ -412,7 +419,5 @@ div.button {
     border-color: #8e44ad;
 }
 
-.navbar-default .navbar-nav > li > a {
-    color: #ecf0f1;
-}
+
 
