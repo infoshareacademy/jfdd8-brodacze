@@ -254,9 +254,7 @@ body {
     margin: 0 auto;
     margin-top: 10%;
     z-index: 30;
-    padding-top: 7em;
 }
-
 .emy{
     padding-bottom: 5em;
 }
@@ -294,7 +292,7 @@ body {
 @media screen and (max-width: 768px) {
     .feature-center {
         /*margin-bottom: 50px;*/
-        height: 350px
+        height: 30em;
     }
 }
 
@@ -303,7 +301,6 @@ body {
     height: 90px;
     background: #efefef;
     display: table;
-    text-align: center;
     margin: 0 auto 30px auto;
     border-radius: 50%;
 }
@@ -371,7 +368,7 @@ span > img {
     justify-content: space-between;
     flex-direction: column;
     width: 100%;
-    padding: 50px;
+    /*padding: 50px;*/
     padding-top: 80px;
     background: #56ab2f;
     background: -webkit-linear-gradient(to left, #a8e063, #56ab2f);
@@ -412,8 +409,7 @@ div.button {
     font-size: 2em;
     display: block;
     text-align: center;
-    padding: 25px, 0px;
-    padding-top: 25px;
+    padding: 25px 0px;
 }
 
 .member img {
@@ -429,7 +425,7 @@ div.button {
     font-size: .5em;
     -webkit-transform-origin: center bottom;
     transform-origin: center bottom;
-    /*min-height: 350px;*/
+    height: 25em;
 }
 
 .description {
@@ -465,13 +461,14 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    padding: 50px;
-    padding-top: 80px;
+    /*padding: 50px;*/
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 #features {
     width: 100%;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 #money {
