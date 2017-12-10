@@ -36,7 +36,7 @@
         flex-direction: column;
         background-image: url('images/sejf2.jpg');
         background-size: cover;
-        opacity: 0.8;
+        opacity: 0.7;
         border-radius: 15px;
     }
 
@@ -56,16 +56,17 @@
     }
 
     .egg {
-        /*background-image: url('images/basket.png');*/
-        background-color: yellow;
+        background-size: cover;
+        background-image: url('images/moneta.png');
+
+
 
 
     }
 
     .basket {
-
-        background: url('images/basket.png');
-        background-color: saddlebrown;
+        background-size: cover;
+        background-image: url('images/money-bag2.png');
 
     }
 
@@ -240,13 +241,13 @@
             gameIntervalId = setInterval(function () {
                 moveEggs();
                 detectCatch();
-            }, 500);
+            }, 1500);
 
             clearInterval(eggsIntervalId);
             eggsIntervalId = setInterval(function () {
                 var $eggPosition = drawEggStartingPosition();
                 createEgg($eggPosition);
-            }, 500);
+            }, 1500);
         }
     })
 </script>
