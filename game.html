@@ -108,6 +108,13 @@
     #id {
         background-image: url('images/sejf2.jpg');
     }
+
+    #zegar {
+        height: 50px;
+        width: 50px;
+        color: deeppink;
+        background-color: white;
+    }
 </style>
 
 <body>
@@ -115,6 +122,88 @@
     <div id="wynik">Twój wynik:</div>
     <div id="score">0</div>
     <button id="start-game">Start</button>
+</div>
+<div id="zegar">
+    <script src="js/jquery-3.2.1.js"></script>
+ <script>
+
+     function count( seconds, callback ) {
+         if( --seconds <= 0 )
+             callback();
+         else
+             setTimeout( count.bind( null, seconds, callback ), 1000 );
+     };
+
+
+     count( 30, function() {
+         alert('Koniec czasu!');
+     } );
+
+//     const ONE_SECOND = 1000;
+//
+//    class Zegarek {
+//    constructor (){
+//    this.limitTime = null;
+//    this.currentTime = 0;
+//    this.$clock = document.querySelector('h1');
+//    this.zegarek = null;
+//    }
+//
+//    render(string) {
+//    let time = Zegarek.formatedTime();
+//    this.$clock.textContent = string;
+//    }
+//
+//    start(formatedTime) {
+//    this.limitTime = Zegarek.parseSeconds(formatedTime);
+//    this.update();
+//    this.zegarek = setInterval (() => {
+//    this.currentTime += ONE_SECOND;
+//    this.update();
+//    if(this.isFinished()){
+//    this.stop();
+//    }
+//    }, ONE_SECOND);
+//    }
+//    update(){
+//    let remain = this.getRemainingTime();
+//    let time = Zegarek.formatedTime(remain);
+//    this.render(time);
+//    }
+//    getRemainingTime () {
+//    return this.limitTime - this.currentTime;
+//    }
+//    stop(){
+//    clearInterval(this.zegarek)
+//    }
+//
+//    isFinished () {
+//    return this.currentTime - this.limitTime;
+//    }
+//    static parseSeconds(time){
+//    let[minutes, seconds]=time.split(':').map(Numbers);
+//    return minutes * 60 * ONE_SECOND + seconds * ONE_SECOND;
+//    return 4000;
+//    }
+//
+//    static formatedTime(miliseconds){
+//    let minutes = Math.floor(miliseconds/ONE_SECOND/60);
+//    let seconds = miliseconds/ONE_SECOND%60;
+//    minutes = String(minutes).padStart(2,'0');
+//    seconds = String(seconds).padStart(2,'0');
+//    return '${minutes}:${seconds}';
+//    }
+//    }
+//
+//    function setup (){
+//    let zegarek1 = new Zegarek();
+//    zegarek1.start('10:00');
+//    }
+//
+//    window.addEventListener('DOMcontentLoader', setup);
+
+</script>
+
 </div>
 
 <div id="app"></div>
@@ -241,15 +330,16 @@
             gameIntervalId = setInterval(function () {
                 moveEggs();
                 detectCatch();
-            }, 1500);
+            }, 700);
 
             clearInterval(eggsIntervalId);
             eggsIntervalId = setInterval(function () {
                 var $eggPosition = drawEggStartingPosition();
                 createEgg($eggPosition);
-            }, 1500);
+            }, 700);
         }
     })
 </script>
+
 </body>
 </html>
