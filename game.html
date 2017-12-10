@@ -5,6 +5,7 @@
         align-items: center;
         justify-content: center;
         height: 100vh;
+        background-image: url("images/money_ls01.jpg");
     }
 
     .table {
@@ -13,26 +14,48 @@
         height: 500px;
         align-items: stretch;
         flex-direction: column;
+        border: 1px solid darkslategrey;
+
     }
 
     .table > div {
         display: flex;
         flex-grow: 1;
+
     }
 
     .table > div > div {
         flex-grow: 1;
-        margin: 10px;
-        border: 1px solid black;
+        background-color: lightcyan;
     }
 
     .egg {
-        background: #0c0;
+        background-size: cover;
+        background-image: url("images/coin_ls.png");
+        size: 75%;
     }
 
     .basket {
-        background: #c00;
+        background-size: cover;
+        background-image: url("images/piggybank.png");
     }
+    #score {
+        font-size: 2em;
+        color: purple;
+        background-color: lightcyan;
+        padding-left: auto;
+        padding-right: auto;
+    }
+    #start-game{
+        background-color: purple;
+        color: gold;
+        font-size: 2em;
+        border: purple;
+        border-radius: 45px;
+        margin-top: 7px;
+        padding-left: 25px;
+        padding-right: 25px;
+
 </style>
 
 <div id="score">0</div>
@@ -46,6 +69,7 @@
         var score = 0;
         var gameIntervalId;
         var eggsIntervalId;
+        var intervalSize = 1000;
         var $app = $('#app');
         var $board = createBoard();
         $app.append($board);
@@ -132,6 +156,7 @@
         function updateScore(delta) {
             score += delta;
             $('#score').text(score);
+            if (score % 10 === 0) { riseSpeed() } // dopisane obniżanie interwału co 10pkt
         }
 
         function play() {
@@ -166,8 +191,19 @@
             eggsIntervalId = setInterval(function () {
                 var $eggPosition = drawEggStartingPosition();
                 createEgg($eggPosition);
-            }, 500);
+            }, 1000);
         }
+
+        function riseSpeed() { // funkcja zwiększająca prędkość tworzenia nowych jaj.
+            intervalSize -= 200;
+            clearInterval(eggsIntervalId);
+            eggsIntervalId = setInterval(function () {
+                var $eggPosition = drawEggStartingPosition();
+                createEgg($eggPosition);
+            }, intervalSize);
+        }
+                
+            })
     })
 </script>
 
