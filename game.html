@@ -69,7 +69,7 @@
         var score = 0;
         var gameIntervalId;
         var eggsIntervalId;
-        var intervalSize = 1000;
+        var intervalSize = 1200;
         var $app = $('#app');
         var $board = createBoard();
         $app.append($board);
@@ -185,13 +185,13 @@
             gameIntervalId = setInterval(function () {
                 moveEggs();
                 detectCatch();
-            }, 500);
+            }, 700);
 
             clearInterval(eggsIntervalId);
             eggsIntervalId = setInterval(function () {
                 var $eggPosition = drawEggStartingPosition();
                 createEgg($eggPosition);
-            }, 1000);
+            }, 1500);
         }
 
         function riseSpeed() { // funkcja zwiększająca prędkość tworzenia nowych jaj.
@@ -202,8 +202,6 @@
                 createEgg($eggPosition);
             }, intervalSize);
         }
-                
-            })
     })
 </script>
 
