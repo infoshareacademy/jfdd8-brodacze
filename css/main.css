@@ -377,6 +377,11 @@ span > img {
     /*clip-path: polygon(100% 20%, 100% 100%, 0 80%, 0 0);*/
 }
 
+h2 {
+    text-align: center;
+    padding-bottom: 2em;
+}
+
 h3 {
     text-align: center;
 }
@@ -405,11 +410,11 @@ div.button {
     padding: 5%;
 }
 
-.team {
+#team {
     font-size: 2em;
     display: block;
     text-align: center;
-    padding: 25px 0px;
+    padding-top: 2em;
 }
 
 .member img {
@@ -457,6 +462,11 @@ footer {
     -webkit-clip-path: polygon(100% 20%, 100% 100%, 0 80%, 0 0);
     clip-path: polygon(100% 20%, 100% 100%, 0 100%, 0 0);
 }
+
+footer > p > a {
+    padding-bottom: 2em;
+}
+
 .container-features {
     display: flex;
     justify-content: space-between;
