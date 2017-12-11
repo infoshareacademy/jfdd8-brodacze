@@ -1,3 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <title>Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+
 <style>
     body {
         display: flex;
@@ -5,6 +23,9 @@
         align-items: center;
         justify-content: center;
         height: 100vh;
+        background-image: url('images/cash2.png');
+        background-size: cover;
+
     }
 
     .table {
@@ -13,31 +34,119 @@
         height: 500px;
         align-items: stretch;
         flex-direction: column;
+        background-image: url('images/sejf2.jpg');
+        background-size: cover;
+        opacity: 0.7;
+        border-radius: 15px;
     }
 
     .table > div {
         display: flex;
         flex-grow: 1;
+
     }
 
     .table > div > div {
         flex-grow: 1;
         margin: 10px;
-        border: 1px solid black;
+        opacity: 1.0;
+        /*border: 1px solid black;*/
+
+
     }
 
     .egg {
-        background: #0c0;
+        background-size: cover;
+        background-image: url('images/moneta.png');
+
+
+
+
     }
 
     .basket {
-        background: #c00;
+        background-size: cover;
+        background-image: url('images/money-bag2.png');
+
     }
+
+    #score {
+
+        color: red;
+        border: 2px solid;
+        padding: 3px;
+        font-size: 20px;
+    }
+    #score {
+        color: gold;
+        border: 5px solid;
+        padding: 4px 30px;
+        font-size: 20px;
+    }
+
+    #wynik {
+        color: gold;
+        border: 5px solid;
+        padding: 4px 10px;
+        font-size: 20px;
+        border-right: none;
+
+    }
+    #start-game {
+        background-color: gold;
+        padding: 5px 30px;
+        color: black;
+        margin: 0 auto;
+    }
+    #nawigacja {
+        display: flex;
+        justify-content: space-around;
+        height: 7vh;
+        margin-bottom: 20px;
+    }
+
+    #id {
+        background-image: url('images/sejf2.jpg');
+    }
+
+    /*#zegar {*/
+        /*height: 50px;*/
+        /*width: 50px;*/
+        /*color: deeppink;*/
+        /*background-color: white;*/
+    /*}*/
 </style>
 
-<div id="score">0</div>
+<body>
+<div id="nawigacja">
+    <div id="wynik">Twój wynik:</div>
+    <div id="score">0</div>
+    <button id="start-game">Start</button>
+</div>
+<div id="zegar">
+    <script src="js/jquery-3.2.1.js"></script>
+ <script>
+
+     function count( seconds, callback ) {
+         if( --seconds <= 0 )
+             callback();
+         else
+             setTimeout( count.bind( null, seconds, callback ), 1000 );
+     };
+
+
+     count( 30, function() {
+         alert('Koniec czasu!');
+     } );
+
+
+
+</script>
+
+</div>
+
 <div id="app"></div>
-<button id="start-game">Start</button>
+
 
 <script src="js/jquery-3.2.1.js"></script>
 <script>
@@ -160,14 +269,16 @@
             gameIntervalId = setInterval(function () {
                 moveEggs();
                 detectCatch();
-            }, 500);
+            }, 700);
 
             clearInterval(eggsIntervalId);
             eggsIntervalId = setInterval(function () {
                 var $eggPosition = drawEggStartingPosition();
                 createEgg($eggPosition);
-            }, 500);
+            }, 700);
         }
     })
 </script>
 
+</body>
+</html>
